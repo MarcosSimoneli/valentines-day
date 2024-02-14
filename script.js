@@ -1,3 +1,12 @@
+// Função para exibir a mensagem após 10 segundos
+setTimeout(function() {
+    var mensagem = document.getElementById('mensagem');
+    mensagem.style.display = 'block';
+
+}, 5000); // 10 segundos em milissegundos
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     var modal = document.getElementById("popupModal");
     var btn = document.getElementById("playButton");

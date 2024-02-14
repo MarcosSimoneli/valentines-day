@@ -122,4 +122,10 @@ body {
     color: black; /* Cor do texto */
     font-size: 24px; /* Tamanho do texto */
     font-family: 'Pacifico', cursive; /* Fonte do Google Fonts */
+    text-shadow: 
+        -1px -1px 0 white,  
+         1px -1px 0 white,
+        -1px  1px 0 white,
+         1px  1px 0 white; /* Contorno branco do texto */
 }
+
