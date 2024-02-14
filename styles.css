@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hearts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Para que os corações não bloqueiem eventos do mouse */
+}
+
+.heart {
+    width: 20px;
+    height: 20px;
+    background-image: url('heart.png'); /* Substitua 'heart.png' pela imagem do coração */
+    background-size: cover;
+    position: absolute;
+    animation: fall 2s ease-out infinite; /* Animação de queda */
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0; /* Desaparece gradualmente enquanto cai */
+    }
+}
