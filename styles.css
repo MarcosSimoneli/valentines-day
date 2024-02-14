@@ -112,3 +112,14 @@ body {
     max-height: 100vh;
     overflow-y: hidden;
 }
+
+.mensagem {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black; /* Cor do texto */
+    font-size: 24px; /* Tamanho do texto */
+    font-family: 'Pacifico', cursive; /* Fonte do Google Fonts */
+}
