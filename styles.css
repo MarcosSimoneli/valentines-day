@@ -43,7 +43,7 @@ body {
 .heart {
     width: 20px;
     height: 20px;
-    background-image: url('/asserts/heart.png');
+    background-image: url('heart.png');
     background-size: cover;
     position: absolute;
     animation: fall 4s linear infinite;

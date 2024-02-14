@@ -39,7 +39,7 @@ function playAudio() {
     var audio = new Audio();
 
     // Defina o caminho da sua música
-    audio.src = "/asserts/Chance Peña - Hey Lovely_x_wq8Qn-dFg.mp3";
+    audio.src = "Chance Peña - Hey Lovely_x_wq8Qn-dFg.mp3";
     audio.volume = 0.1
     audio.loop = true;
     // Inicie a reprodução da música automaticamente
@@ -47,12 +47,11 @@ function playAudio() {
 }
 
 function carousel() {
-    console.log("passou aqui");
-    let imagens = ['/asserts/MyLove/picture2.jpg', '/asserts/MyLove/picture3.jpg', '/asserts/MyLove/picture4.jpg', '/asserts/MyLove/picture5.jpg',
-        '/asserts/MyLove/picture6.jpg', '/asserts/MyLove/picture7.jpg', '/asserts/MyLove/picture8.jpg', '/asserts/MyLove/picture9.jpg',
-        '/asserts/MyLove/picture10.jpg', '/asserts/MyLove/picture11.jpg', '/asserts/MyLove/picture12.jpg', '/asserts/MyLove/picture13.jpg',
-        '/asserts/MyLove/picture14.jpg', '/asserts/MyLove/picture15.jpg', '/asserts/MyLove/picture16.jpg', '/asserts/MyLove/picture17.jpg',
-        '/asserts/MyLove/picture18.jpg'];
+    let imagens = ['picture2.jpg', 'picture3.jpg', 'picture4.jpg', 'picture5.jpg',
+        'picture6.jpg', 'picture7.jpg', 'picture8.jpg', 'picture9.jpg',
+        'picture10.jpg', 'picture11.jpg', 'picture12.jpg', 'picture13.jpg',
+        'picture14.jpg', 'picture15.jpg', 'picture16.jpg', 'picture17.jpg',
+        'picture18.jpg'];
     let indice = 0;
 
     function trocarImagens() {
@@ -64,9 +63,7 @@ function carousel() {
 
         indice += 2;
     }
-    console.log("agora aqui")
-    // setInterval(trocarImagens, 5000); 
-
+    
     setTimeout(function () {
         trocarImagens(); // chama a função uma vez para preencher as imagens após o atraso
         setInterval(trocarImagens, 5000); // continua a trocar as imagens a cada 5 segundos
