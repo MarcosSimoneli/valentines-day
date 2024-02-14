@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="data:,">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Valentine's Day!</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Vamos separar o CSS para um arquivo externo -->
+    <link rel="stylesheet" href="/src/styles.css">
 </head>
 <body>
-    <div class="container">
+
+    <div id="popupModal" class="modal">
+        <div class="modal-content">
+          <p>Happy Valentine's day minha gatinha</p>
+          <button id="playButton">Iniciar</button>
+        </div>
+      </div>
+      
+    <!-- <div class="container">
         <img src="https://example.com/valentine_image.jpg" alt="Happy Valentine's Day">
         <h1>Happy Valentine's Day!</h1>
         <p>Wishing you a day filled with love and happiness.</p>
         <p>May your heart be full and your day be bright.</p>
         <p>Love always,</p>
         <p>Your Name</p>
-        <div class="hearts"></div> <!-- Aqui é onde os corações cairão -->
-    </div>
-    <script src="script.js"></script> <!-- Vamos separar o JavaScript para um arquivo externo -->
+    </div> -->
+    <div class="hearts"></div>
+    <script src="/src/script.js"></script>
+
+    <div class="carousel-container">
+        <img id="img1" src="" alt="Imagem 1">
+        <img id="img2" src="" alt="Imagem 2">        
+      </div>
+      
 </body>
 </html>
